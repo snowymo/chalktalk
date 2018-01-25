@@ -57,8 +57,10 @@
 
 <!-- THE HTML SLIDE SHOW -->
 
-<script src="content/blank_page.js">
-</script>
+<script src="content/blank_page.js"></script>
+
+<!-- WEB VR -->
+<script src="lib/webvrsupport.js"></script>
 
 <style>
    p {
@@ -80,6 +82,35 @@
       text-decoration:none;
       overflow: hidden;
     }
+	button {
+  position: absolute;
+  top: 3px;
+}
+
+.stop-start {
+  right: 3px;
+}
+
+.pose-stats {
+  right: 120px;
+}
+
+section {
+  position: absolute;
+  background-color: rgb(255,255,255,0.5);
+  color: black;
+  bottom: 3px;
+  right: 3px;
+  display: flex;
+}
+
+section p {
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 11px;
+  width: 230px;
+  text-align: center;
+}
 </style>
 
 <link rel="manifest" href="manifest.json">
